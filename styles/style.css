@@ -29,7 +29,7 @@
     font-weight: 700;
     font-size: 20px;
     color: white;
-    padding: 18px 35px;
+    padding: 14px 18px;
     border-radius: 5px;
     border: none;
 }
@@ -93,6 +93,7 @@ nav li a{
 }
 .banner-profile-picture{
     width: 580px;
+    height: 580px;
 }
 /* main styles */
 main{
@@ -104,11 +105,12 @@ main section{
     margin-bottom: 130px;
 }
 /* about styles */
+
 .about{
     border-radius: 10px;
     padding: 130px 150px;
     text-align: center;
-    
+    box-shadow: 0px 6px 50px 0 rgba(33, 19, 19, 0.16);/* x,y,blur,spread color */
 }
 .about-items{
     display: flex;
@@ -129,6 +131,10 @@ main section{
     border-radius: 18px;
     box-shadow: 0px 6px 50px 0 rgba(0, 0, 0, 0.06);/* x,y,blur,spread color */
     
+}
+.skill img{
+    height: 50px;
+    width: 50px;
 }
 /* resume styles */
 .resume-container{
@@ -168,4 +174,9 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     padding: 10px 20px;
     margin-bottom: 24px;
     border: none;
+}
+.footer-icon-img img{
+    height: 30px;
+    width: 30px;
+    margin-right: 8px;
 }

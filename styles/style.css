@@ -229,11 +229,13 @@ footer textarea {
 
     .skils-container,
     .resume-container,
-    footer {
+    footer,
+    .about-items {
         flex-direction: column;
     }
 
-    footer {
+    footer,
+    .about {
         padding: 20px;
     }
 
@@ -246,5 +248,6 @@ footer textarea {
     footer textarea {
         width: calc(100% - 40px);
     }
+
 
 }

@@ -225,11 +225,8 @@ footer textarea {
     margin-right: 8px;
 }
 
-/* responsive media query */
+/* responsive media query for mobile  */
 
-.hide {
-    display: none;
-}
 
 @media screen and (max-width: 576px) {
 
@@ -276,4 +273,12 @@ footer textarea {
     }
 
 
+}
+
+/* responsive media query for tab  */
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .banner{
+        flex-direction: column;
+    }
 }

@@ -103,15 +103,21 @@ nav li a {
 
 .banner-title {
     font-weight: bold;
-    font-size: 70px;
-    height: 65px;
+    font-size: 65px;
+    /* height: 65px; */
+    
 }
 
 .banner-profile-picture {
-    width: 580px;
-    height: 580px;
-}
+    /* width: 580px;
+    height: 580px; */
+    min-width: 580px;
+    min-height: 580px;
 
+}
+.btn-primary{
+    margin-bottom: 10px;
+}
 /* main styles */
 main {
     max-width: 1140px;
@@ -230,15 +236,35 @@ footer textarea {
     .skils-container,
     .resume-container,
     footer,
-    .about-items {
+    .about-items,
+    .banner,
+    nav,
+    nav > ul {
         flex-direction: column;
     }
-
+    nav > ul {
+        gap: 10px;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
+    }
     footer,
     .about {
         padding: 20px;
     }
-
+    .banner{
+        margin: 20px;
+    }
+    .banner-profile-picture{
+        /* width: 100%; */
+        min-width: auto;
+        min-height: auto;
+       
+    }
+   
+    .header{
+        background-image: none;
+    }
     .footer-column {
         width: 100%;
     }

@@ -1,30 +1,33 @@
-
-
 .open-sans-normal {
     font-family: "Open Sans", serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:
-      "wdth" 100;
-  }
+        "wdth" 100;
+}
 
 /* shared style */
-.secondary-bg{
+.secondary-bg {
     background-color: #FFF8F3;
 }
-.text-primary{
+
+.text-primary {
     color: #FD6E0A;
 }
-.dark-2{
+
+.dark-2 {
     color: #474747;
 }
-.dark-1{
+
+.dark-1 {
     color: #181818;
 }
-.dark-3{
+
+.dark-3 {
     color: #757575;
 }
-.btn-primary{
+
+.btn-primary {
     background-color: #FD6E0A;
     font-weight: 700;
     font-size: 20px;
@@ -33,139 +36,173 @@
     border-radius: 5px;
     border: none;
 }
-.section-title{
+
+.section-title {
     font-size: 35px;
     font-weight: bold;
     color: #181818;
 }
-.section-description{
+
+.section-description {
     font-size: 18px;
     color: #757575;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
+
 /* header */
-.header{
+.header {
     background-image: url('../images/developer.png'), url('../images/header_bg.png');
     background-repeat: no-repeat;
     background-position: top left, bottom right;
 }
+
 /* nav styles */
-nav{
+nav {
     display: flex;
-    align-items: center;/* vartical */
+    align-items: center;
+    /* vartical */
     justify-content: space-between;
     margin: 0 200px;
 }
-.nav-title{
+
+.nav-title {
     font-weight: 800;
     font-size: 45px;
 }
-nav ul{
+
+nav ul {
     display: flex;
     align-items: center;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
     margin-right: 51px;
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
     font-size: 20px;
 }
 
 /* banner style */
-.banner{
+.banner {
     display: flex;
     justify-content: space-between;
-    margin: 0 35px 0 200px ;
+    margin: 0 35px 0 200px;
 }
-.banner-grettings{
+
+.banner-grettings {
     font-size: 45px;
     font-weight: 600;
     height: 0;
 }
-.banner-title{
+
+.banner-title {
     font-weight: bold;
     font-size: 70px;
     height: 65px;
 }
-.banner-profile-picture{
+
+.banner-profile-picture {
     width: 580px;
     height: 580px;
 }
+
 /* main styles */
-main{
+main {
     max-width: 1140px;
     margin: 0 auto;
 }
-main section{
+
+main section {
     margin-top: 130px;
     margin-bottom: 130px;
 }
+
 /* about styles */
 
-.about{
+.about {
     border-radius: 10px;
     padding: 130px 150px;
     text-align: center;
-    box-shadow: 0px 6px 50px 0 rgba(33, 19, 19, 0.16);/* x,y,blur,spread color */
+    box-shadow: 0px 6px 50px 0 rgba(33, 19, 19, 0.16);
+    /* x,y,blur,spread color */
 }
-.about-items{
+
+.about-items {
     display: flex;
     justify-content: space-around;
-    
+
 }
-.item-title{
+
+.item-title {
     height: 10px;
     color: #757575
 }
+
 /* skills styles */
-.skils-container{
+.skils-container {
     display: flex;
     gap: 24px;
 }
-.skill{
+
+.skill {
     padding: 30px;
     border-radius: 18px;
-    box-shadow: 0px 6px 50px 0 rgba(0, 0, 0, 0.06);/* x,y,blur,spread color */
-    
+    box-shadow: 0px 6px 50px 0 rgba(0, 0, 0, 0.06);
+    /* x,y,blur,spread color */
+
 }
-.skill img{
+
+.skill img {
     height: 50px;
     width: 50px;
 }
+
 /* resume styles */
-.resume-container{
+.resume-container {
     display: flex;
     gap: 24px;
 }
-.experience-sub-title{
+
+.experience-sub-title {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 20px;
 }
-.experience-description, .experience-sub-title{
+
+.experience-description,
+.experience-sub-title {
     color: #757575;
 }
-.resume hr{
+
+.resume hr {
     margin: 30px 5px;
 }
-.resume-download-cv{
+
+.resume-download-cv {
     margin-top: 50px;
 }
+
 /* footer styles */
 
-footer{
+footer {
     padding: 130px 230px;
     display: flex;
     gap: 100px;
 }
-.footer-column{
+
+.footer-column {
     width: 50%;
 }
-footer input[type="text"], footer input[type="email"], footer textarea{
+
+footer input[type="text"],
+footer input[type="email"],
+footer textarea {
     height: 64px;
     border-radius: 5px;
     background-color: white;
@@ -175,8 +212,21 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     margin-bottom: 24px;
     border: none;
 }
-.footer-icon-img img{
+
+.footer-icon-img img {
     height: 30px;
     width: 30px;
     margin-right: 8px;
+}
+
+/* responsive media query */
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    .skils-container{
+        flex-direction: column;
+    }
 }

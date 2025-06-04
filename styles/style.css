@@ -55,7 +55,7 @@ body.light {
     grid-template-columns: 1fr;
     grid-auto-columns: max-content;
     grid-auto-rows: max-content;
-    position: static;
+    position: sticky;
     top: 50px;
     z-index: 5;
     cursor: pointer;
@@ -210,6 +210,80 @@ section {
     font: 15px;
 }
 
+/* skils */
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    color: var(--accent-02);
+}
+
+.skills>div {
+    background-color: var(--accent-04);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    /*     
+    transition: border-color .5s; */
+    cursor: pointer;
+}
+
+.skills>div:hover {
+    border-color: var(--primary-color);
+    background-color: var(--accent-03);
+    transform: scale(1.03);
+}
+
+.skills ion-icon {
+    color: var(--primary-color);
+    font-size: 32px;
+}
+
+.skills .circle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    background: conic-gradient(from 0deg,
+            var(--primary-color) 0%,
+            var(--primary-color) 0% var(--percent),
+            var(--accent-03) var(--percent));
+    border-radius: 50%;
+    margin-bottom: 5px;
+
+}
+.skills .circle::before {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    background-color: var(--accent-04);
+    border-radius: 50%;
+}
+.skills .circle h4 {
+    position: relative;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 3;
+}
+.skills progress {
+    width: 100%;
+    appearance: none;
+    height: 10px;
+}
+.skills progress::-webkit-progress-bar{
+    border-radius: 10px;
+    background-color: var(--accent-04);
+    
+}
+.skills progress::-webkit-progress-value{
+    border-radius: 10px;
+    background-color: var(--primary-color);
+
+}
 
 /* -------------------responsivness--------------- */
 
@@ -218,6 +292,12 @@ section {
     .container {
         grid-template-columns: 85px 430px 1fr;
     }
+
+    .skills div:nth-child(7) {
+        grid-column: 3/span 2;
+    }
+
+
 }
 
 /* tablet */
@@ -235,6 +315,15 @@ section {
     .achivement {
         grid-template-columns: 1fr 1fr;
     }
+
+    .skills {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .skills div:nth-child(7) {
+        grid-column: 1/4;
+    }
+
 }
 
 /* mobile */
@@ -263,10 +352,24 @@ section {
         display: none;
     }
 
+    .navbar {
+        box-shadow: rgb(0, 0, 0, 0.16) 0px 10px 36px 0px,
+            rgb(0, 0, 0, 0.06)0px 0px 0px 1px;
+    }
+
     .achivement {
         grid-template-columns: 1fr;
         text-align: center;
     }
+
+    .skills {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skills div:nth-child(7) {
+        grid-column: 1/3;
+    }
+
 }
 
 

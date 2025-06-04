@@ -19,7 +19,8 @@ body {
     padding: 0;
     height: 100vh;
     justify-content: center;
-    text-align: center;
+    color: white;
+    /* text-align: center; */
     background-color: var(--accent-04);
     columns: var(--accent-01);
 }
@@ -154,7 +155,24 @@ body.light {
     color: var(--accent-04);
 
 }
+/* content */
+.content {
+    padding: 20px 15px 20px 20px;
+}
 
+.content h2 {
+    font-size: 2em;
+}
+
+.content p {
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.colored {
+    color: var(--primary-color);
+
+}
 
 /* -------------------responsivness--------------- */
 
@@ -170,6 +188,10 @@ body.light {
     .container {
         grid-template-columns: 85px 1fr;
         max-width: 650px;
+    }
+    .content{
+        grid-column-start: 2;
+        grid-column-end: 4;
     }
 }
 

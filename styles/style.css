@@ -340,6 +340,77 @@ section {
     font-weight: 400;
 }
 
+
+.contributions{
+    display: grid;
+    grid-template-columns: 1fr;
+    border: var(--accent-04) 3px solid;
+    border-radius: 10px;
+    width: 100%;
+}
+.contributions activity-graph {
+    padding: 10px 20px;
+    color: var(--accent-02);
+    --activity-graph-text-color: var(--accent-02);
+    --activity-graph-rounded: 2px;
+    --activity-graph-level-0-bg: var(--accent-04);
+    --activity-graph-level-1-bg: #0e4545;
+    --activity-graph-level-2-bg: #006c69;
+    --activity-graph-level-3-bg: #25a0a7;
+    --activity-graph-level-4-bg: #37c9d5;
+}
+body.light .contributions activity-graph {
+
+    --activity-graph-level-0-bg: #ebedf0;
+    --activity-graph-level-1-bg: #9be9a8;
+    --activity-graph-level-2-bg: #40c463;
+    --activity-graph-level-3-bg: #30a14e;
+    --activity-graph-level-4-bg: #216e39;
+}
+
+.contributions activity-graph .activity-level-0 {
+    background-color: var(--activity-graph-level-0-bg) !important;
+}
+
+.contributions activity-graph .activity-level-1 {
+    background-color: var(--activity-graph-level-1-bg) !important;
+}
+
+.contributions activity-graph .activity-level-2 {
+    background-color: var(--activity-graph-level-2-bg) !important;
+}
+
+.contributions activity-graph .activity-level-3 {
+    background-color: var(--activity-graph-level-3-bg) !important;
+}
+
+.contributions activity-graph .activity-level-4 {
+    background-color: var(--activity-graph-level-4-bg) !important;
+}
+
+
+.contributions > div {
+    overflow:  auto;
+}
+
+.contributions figure {
+    overflow: hidden;
+}
+.contributions table{
+    border-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* -------------------responsivness--------------- */
 
 /* desktop */

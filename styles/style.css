@@ -19,7 +19,7 @@ body {
     padding: 0;
     height: 100vh;
     justify-content: center;
-    /* color: white; */
+    color: var(--accent-01);
     /* text-align: center; */
     background-color: var(--accent-04);
     columns: var(--accent-01);
@@ -31,6 +31,8 @@ body.light {
     --accent-02: #225b60;
     --accent-03: #ffffff;
     --accent-04: #d5f3f9;
+    color: var(--accent-01);
+
 }
 
 .container {
@@ -168,12 +170,14 @@ body.light {
 .content h2 {
     font-size: 2em;
 }
+
 .content .wrapper {
     overflow: auto;
     max-height: 700px;
     padding-right: 10px;
     scroll-behavior: smooth;
 }
+
 .content ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
@@ -182,6 +186,7 @@ body.light {
 .content ::-webkit-scrollbar-track {
     background-color: var(--accent-04);
 }
+
 .content ::-webkit-scrollbar-thumb {
     background-color: var(--primary-color);
     border-radius: 5px;
@@ -275,6 +280,7 @@ section {
     margin-bottom: 5px;
 
 }
+
 .skills .circle::before {
     content: '';
     position: absolute;
@@ -282,23 +288,27 @@ section {
     background-color: var(--accent-04);
     border-radius: 50%;
 }
+
 .skills .circle h4 {
     position: relative;
     text-align: center;
     font-size: 1.2em;
     line-height: 3;
 }
+
 .skills progress {
     width: 100%;
     appearance: none;
     height: 10px;
 }
-.skills progress::-webkit-progress-bar{
+
+.skills progress::-webkit-progress-bar {
     border-radius: 10px;
     background-color: var(--accent-04);
-    
+
 }
-.skills progress::-webkit-progress-value{
+
+.skills progress::-webkit-progress-value {
     border-radius: 10px;
     background-color: var(--primary-color);
 
@@ -307,10 +317,11 @@ section {
 .experience {
     margin: 15px 0;
 }
+
 .experience p {
     padding-left: 20px;
-    border-left: var(--accent-02) 2px solid ;
-    margin-left:  17px;
+    border-left: var(--accent-02) 2px solid;
+    margin-left: 17px;
     color: var(--accent-02);
 }
 
@@ -320,6 +331,7 @@ section {
     color: var(--primary-color);
     margin: 10px;
 }
+
 .experience h4::before {
     content: "";
     position: absolute;
@@ -330,6 +342,7 @@ section {
     left: 0;
     top: 5px;
 }
+
 .experience .date {
     padding: 5px 10px;
     background-color: var(--accent-04);
@@ -341,13 +354,14 @@ section {
 }
 
 
-.contributions{
+.contributions {
     display: grid;
     grid-template-columns: 1fr;
     border: var(--accent-04) 3px solid;
     border-radius: 10px;
     width: 100%;
 }
+
 .contributions activity-graph {
     padding: 10px 20px;
     color: var(--accent-02);
@@ -359,6 +373,7 @@ section {
     --activity-graph-level-3-bg: #25a0a7;
     --activity-graph-level-4-bg: #37c9d5;
 }
+
 body.light .contributions activity-graph {
 
     --activity-graph-level-0-bg: #ebedf0;
@@ -389,24 +404,158 @@ body.light .contributions activity-graph {
 }
 
 
-.contributions > div {
-    overflow:  auto;
+.contributions>div {
+    overflow: auto;
 }
 
 .contributions figure {
     overflow: hidden;
 }
-.contributions table{
+
+.contributions table {
     border-spacing: 2px;
 }
 
+.projects {
+    display: grid;
+    gap: 10px;
+}
+
+.projects-1 {
+    grid-area: p1;
+}
+
+.projects-2 {
+    grid-area: p2;
+}
+
+.projects-3 {
+    grid-area: p3;
+}
+
+.projects-4 {
+    grid-area: p4;
+}
+
+.projects-5 {
+    grid-area: p5;
+}
+
+.projects-6 {
+    grid-area: p6;
+}
+
+.projects-7 {
+    grid-area: p7;
+}
+
+.projects-8 {
+    grid-area: p8;
+}
+
+.projects-9 {
+    grid-area: p9;
+}
+
+.projects-10 {
+    grid-area: p10;
+}
+
+.projects div img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: .5s;
+}
+
+.projects div {
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.projects div:hover img {
+    filter: brightness(.5);
+}
+
+.projects div {
+    position: relative;
+}
+
+.projects h3 {
+    position: absolute;
+    inset: 0;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.projects div:hover h3 {
+    opacity: 1;
+}
+
+body.light .projects h3{
+    color: var(--accent-04);
+}
 
 
+/* Bloogs */
 
+.blogs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
 
+.blog-box img {
+    width: 100%;
+    border-radius: 7px;
+}
 
+.blog-box  {
+    cursor: pointer;
+    border: var(--accent-04) 3px solid;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--accent-04);
+    transition: background-color .5s, border-color .5s;
+}
+.blog-box div {
+    padding-top: 10px;
+    border-radius: 10px;
+    transform: background-color .5s;
+}
+.blog-box p {
+    color: var(--accent-02);
+}
 
+.blog-box p, blog-box h3 {
+    margin: 0;
+    transition: color .5s;
+}
+.blog-box:hover {
+    border-color: var(--primary-color);
+}
 
+.blog-box:hover h3 {
+    color: var(--primary-color);
+}
+
+.blog-box a,.blog-box ion-icon {
+    color: var(--primary-color);
+    transition: color .5s, padding-left .5s;
+}
+.blog-box .link:hover ion-icon {
+    padding-left: 5px;
+}
+
+.blog-box .link {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
 
 
 
@@ -423,6 +572,15 @@ body.light .contributions activity-graph {
         grid-column: 3/span 2;
     }
 
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "p1 p2 p3"
+            "p4 p5 p6"
+            "p7 p8 p9"
+            "p10 . .";
+
+    }
 
 }
 
@@ -448,6 +606,17 @@ body.light .contributions activity-graph {
 
     .skills div:nth-child(7) {
         grid-column: 1/4;
+    }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "p1 p2"
+            "p3 p4"
+            "p5 p6"
+            "p7 p8"
+            "p9 p10"
+        ;
     }
 
 }
@@ -494,6 +663,25 @@ body.light .contributions activity-graph {
 
     .skills div:nth-child(7) {
         grid-column: 1/3;
+    }
+
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "p1"
+            "p2"
+            "p3"
+            "p4"
+            "p5"
+            "p6"
+            "p7"
+            "p8"
+            "p9"
+            "p10"
+        ;
+    }
+    .blogs  {
+        grid-template-columns: 1fr;
     }
 
 }

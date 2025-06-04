@@ -116,30 +116,34 @@ body.light {
 .profile ul li {
     display: inline;
 }
+
 .profile .footer {
     position: static;
-    top: calc(100vh - 100px );
-    
+    top: calc(100vh - 100px);
+
 }
+
 .profile table {
-     width: 100%;
-     padding-bottom: 15px;   
+    width: 100%;
+    padding-bottom: 15px;
 }
 
 .profile ion-icon {
     color: var(--accent-02);
-    transition:  color .5s, border-coler.5s background-color .5s;
+    transition: color .5s, border-coler.5s background-color .5s;
     margin-bottom: -7px;
 }
 
 .profile ul ion-icon {
-     padding: 10px;
-     border-radius: 10px;
-     background-color: var(--accent-04);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--accent-04);
 }
+
 .profile ul ion-icon:hover {
-     border-color:  var(--accent-04);
+    border-color: var(--accent-04);
 }
+
 .profile ion-icon:hover {
     color: var(--primary-color);
 }
@@ -150,11 +154,12 @@ body.light {
     transition: color .5s, background-color .5s;
 }
 
-.profile td:hover ion-icon{
+.profile td:hover ion-icon {
     background-color: var(--primary-color);
     color: var(--accent-04);
 
 }
+
 /* content */
 .content {
     padding: 20px 15px 20px 20px;
@@ -174,6 +179,38 @@ body.light {
 
 }
 
+/* achivement */
+
+section {
+    margin: 30px auto;
+}
+
+.achivement {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--accent-04);
+    padding: 20px 30px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.achivement h3 {
+    font-size: 2.3em;
+}
+
+.achivement ion-icon {
+    margin-bottom: -5px;
+    color: var(--primary-color);
+    font-size: 0.9em;
+}
+
+.achivement p {
+    color: var(--accent-02);
+    line-height: 1.2;
+    font: 15px;
+}
+
+
 /* -------------------responsivness--------------- */
 
 /* desktop */
@@ -189,9 +226,14 @@ body.light {
         grid-template-columns: 85px 1fr;
         max-width: 650px;
     }
-    .content{
+
+    .content {
         grid-column-start: 2;
         grid-column-end: 4;
+    }
+
+    .achivement {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -203,18 +245,27 @@ body.light {
         padding: 20px;
         padding-top: 50px;
     }
+
     .navbar {
         display: inline-grid;
         grid-template-columns: 85px 1fr;
 
     }
+
     .nav {
         display: inline-grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         padding: 5px;
     }
-    .nav .divider, nav p {
+
+    .nav .divider,
+    nav p {
         display: none;
+    }
+
+    .achivement {
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 }
 

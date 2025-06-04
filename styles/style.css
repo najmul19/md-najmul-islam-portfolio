@@ -557,6 +557,48 @@ body.light .projects h3{
     padding-top: 10px;
 }
 
+/* contact */
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 20px 0;
+}
+.contact .input {
+    width: 100%;
+    background-color: var(--accent-04);
+    border: var(--accent-04) 1px solid;
+    color: var(--accent-02);
+    border-radius: 5px;
+    line-height: 3;
+    outline: none;
+    transition: border-color .5s;
+}
+.contact .input:hover, .contact .input:focus {
+    border: var(--primary-color) 1px solid;
+}
+.contact .submit {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 5px;
+    transition: ackground-color .5s, filter .5s;
+}
+.contact input::placeholder, .contact .textarea::placeholder {
+    color: var(--accent-03);
+    filter: brightness(2);
+    padding-left: 10px;
+}
+body.light .contact input::placeholder, body.light.contact .textarea::placeholder {
+    color: var(--accent-01);
+}
+
+.contact .submit:hover {
+    filter: brightness(.8);
+    cursor: pointer;
+}
 
 
 
@@ -681,6 +723,10 @@ body.light .projects h3{
         ;
     }
     .blogs  {
+        grid-template-columns: 1fr;
+    }
+
+    .contact {
         grid-template-columns: 1fr;
     }
 

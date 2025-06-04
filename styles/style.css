@@ -196,6 +196,7 @@ body.light {
 .content p {
     line-height: 1.5;
     font-size: 18px;
+
 }
 
 .colored {
@@ -249,10 +250,8 @@ section {
     padding: 20px;
     border-radius: 10px;
     border: 2px solid transparent;
-    transition: all 0.4s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    /*     
-    transition: border-color .5s; */
+
+    transition: border-color .5s;
     cursor: pointer;
 }
 
@@ -314,9 +313,53 @@ section {
 
 }
 
+/* --------------------- */
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: inline;
+    margin-right: 8px;
+}
+
+.date-range,
+.dash {
+    background: #222;
+    color: #ccc;
+    font-size: 0.8rem;
+    padding: 3px 7px;
+    margin-left: 8px;
+    border-radius: 6px;
+}
+
+p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-left: 18px;
+    font-size: 0.95rem;
+}
+
+.more-text {
+    display: none;
+    /* display: block; */
+    margin-top: 6px;
+}
+
+.read-more-btn {
+    color: var(--primary-color);
+    cursor: pointer;
+    display: block;
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+/* ---------------- */
 .experience {
     margin: 15px 0;
 }
+
 
 .experience p {
     padding-left: 20px;
@@ -496,7 +539,7 @@ body.light .contributions activity-graph {
     opacity: 1;
 }
 
-body.light .projects h3{
+body.light .projects h3 {
     color: var(--accent-04);
 }
 
@@ -514,7 +557,7 @@ body.light .projects h3{
     border-radius: 7px;
 }
 
-.blog-box  {
+.blog-box {
     cursor: pointer;
     border: var(--accent-04) 3px solid;
     padding: 10px;
@@ -522,19 +565,23 @@ body.light .projects h3{
     background-color: var(--accent-04);
     transition: background-color .5s, border-color .5s;
 }
+
 .blog-box div {
     padding-top: 10px;
     border-radius: 10px;
     transform: background-color .5s;
 }
+
 .blog-box p {
     color: var(--accent-02);
 }
 
-.blog-box p, blog-box h3 {
+.blog-box p,
+blog-box h3 {
     margin: 0;
     transition: color .5s;
 }
+
 .blog-box:hover {
     border-color: var(--primary-color);
 }
@@ -543,10 +590,12 @@ body.light .projects h3{
     color: var(--primary-color);
 }
 
-.blog-box a,.blog-box ion-icon {
+.blog-box a,
+.blog-box ion-icon {
     color: var(--primary-color);
     transition: color .5s, padding-left .5s;
 }
+
 .blog-box .link:hover ion-icon {
     padding-left: 5px;
 }
@@ -565,6 +614,7 @@ body.light .projects h3{
     gap: 10px;
     margin: 20px 0;
 }
+
 .contact .input {
     width: 100%;
     background-color: var(--accent-04);
@@ -575,9 +625,12 @@ body.light .projects h3{
     outline: none;
     transition: border-color .5s;
 }
-.contact .input:hover, .contact .input:focus {
+
+.contact .input:hover,
+.contact .input:focus {
     border: var(--primary-color) 1px solid;
 }
+
 .contact .submit {
     background-color: var(--primary-color);
     color: white;
@@ -586,12 +639,16 @@ body.light .projects h3{
     border-radius: 5px;
     transition: ackground-color .5s, filter .5s;
 }
-.contact input::placeholder, .contact .textarea::placeholder {
+
+.contact input::placeholder,
+.contact .textarea::placeholder {
     color: var(--accent-03);
     filter: brightness(2);
     padding-left: 10px;
 }
-body.light .contact input::placeholder, body.light.contact .textarea::placeholder {
+
+body.light .contact input::placeholder,
+body.light.contact .textarea::placeholder {
     color: var(--accent-01);
 }
 
@@ -722,7 +779,8 @@ body.light .contact input::placeholder, body.light.contact .textarea::placeholde
             "p10"
         ;
     }
-    .blogs  {
+
+    .blogs {
         grid-template-columns: 1fr;
     }
 

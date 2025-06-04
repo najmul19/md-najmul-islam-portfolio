@@ -1,7 +1,7 @@
-*{
-    margin:  0;
+* {
+    margin: 0;
     padding: 0;
-    transition: color, .1s , background-color .5s;
+    transition: color, .1s, background-color .5s;
     color: inherit;
     text-decoration: inherit;
     box-sizing: border-box;
@@ -9,7 +9,7 @@
 
 body {
     --primary-color: #4fc6ce;
-    --accent-01:#DBDBDB ;
+    --accent-01: #DBDBDB;
     --accent-02: #98B1BA;
     --accent-03: #26333A;
     --accent-04: #1a2328;
@@ -24,13 +24,14 @@ body {
     columns: var(--accent-01);
 }
 
-body.light{
+body.light {
     --primary-color: #4fc6ce;
-    --accent-01:#1d3a41 ;
+    --accent-01: #1d3a41;
     --accent-02: #225b60;
     --accent-03: #ffffff;
     --accent-04: #d5f3f9;
 }
+
 .container {
     display: grid;
     gap: 5px;
@@ -38,6 +39,7 @@ body.light{
     padding: 50px;
     margin: 0 auto;
 }
+
 .box {
     background-color: var(--accent-03);
     border-radius: 25px;
@@ -45,7 +47,7 @@ body.light{
 
 
 /* ------------navbar-------- */
-.navbar{
+.navbar {
     display: grid;
     gap: 5px;
     text-align: center;
@@ -61,43 +63,136 @@ body.light{
     color: var(--accent-02);
 }
 
-.navbar> div {
+.navbar>div {
     padding: 25px 10px;
 
 }
+
 .navbar ion-icon {
-    font-size:  32px;
+    font-size: 32px;
     margin: auto;
 }
 
-.navbar .active, .navbar .item:hover {
+.navbar .active,
+.navbar .item:hover {
     color: var(--primary-color);
     opacity: 1;
+}
+
+/* ...........profile--------- */
+
+.profile {
+    text-align: center;
+    font-size: 20px;
+}
+
+.profile .header {
+    max-height: 40vh;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+    clip-path: polygon(100% 0, 100% 80%, 80% 100%, 20% 100%, 0 80%, 0 0);
+}
+
+.profile .img {
+    width: 140px;
+    position: relative;
+    margin: -60px auto 0;
+    border: var(--accent-04) 6px solid;
+    border-radius: 35px;
+
+}
+
+.profile p {
+    margin-top: 10px;
+    height: 20px;
+}
+
+.profile ul {
+    list-style-type: none;
+    margin: 30px 0 80px 0;
+}
+
+.profile ul li {
+    display: inline;
+}
+.profile .footer {
+    position: static;
+    top: calc(100vh - 100px );
+    
+}
+.profile table {
+     width: 100%;
+     padding-bottom: 15px;   
+}
+
+.profile ion-icon {
+    color: var(--accent-02);
+    transition:  color .5s, border-coler.5s background-color .5s;
+    margin-bottom: -7px;
+}
+
+.profile ul ion-icon {
+     padding: 10px;
+     border-radius: 10px;
+     background-color: var(--accent-04);
+}
+.profile ul ion-icon:hover {
+     border-color:  var(--accent-04);
+}
+.profile ion-icon:hover {
+    color: var(--primary-color);
+}
+
+.profile table ion-icon {
+    padding: 5px;
+    border-radius: 10px;
+    transition: color .5s, background-color .5s;
+}
+
+.profile td:hover ion-icon{
+    background-color: var(--primary-color);
+    color: var(--accent-04);
+
 }
 
 
 /* -------------------responsivness--------------- */
 
 /* desktop */
-@media screen  and (width>=1024px){
-    .container{
+@media screen and (width>=1024px) {
+    .container {
         grid-template-columns: 85px 430px 1fr;
     }
 }
+
 /* tablet */
-@media screen  and (width>=768px) and (width<1024px){
-    .container{
-        grid-template-columns: 85px  1fr;
+@media screen and (width>=768px) and (width<1024px) {
+    .container {
+        grid-template-columns: 85px 1fr;
         max-width: 650px;
     }
 }
+
 /* mobile */
-@media screen  and (width<=769px) {
-    .container{
+@media screen and (width<=769px) {
+    .container {
         grid-template-columns: 1fr;
         max-width: 500px;
         padding: 20px;
         padding-top: 50px;
+    }
+    .navbar {
+        display: inline-grid;
+        grid-template-columns: 85px 1fr;
+
+    }
+    .nav {
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding: 5px;
+    }
+    .nav .divider, nav p {
+        display: none;
     }
 }
 
@@ -112,8 +207,9 @@ body.light{
 }
 
 .ltr {
-    background: radial-gradient(ellips at left, var(--accent-02) -70%, transition 80%);
+    background: radial-gradient(ellipse at left, var(--accent-02) -70%, transparent 80%);
 }
+
 .rtl {
-    background: radial-gradient(ellips at right, var(--accent-02) -70%, transition 80%);
+    background: radial-gradient(ellipse at right, var(--accent-02) -70%, transparent 80%);
 }

@@ -19,7 +19,7 @@ body {
     padding: 0;
     height: 100vh;
     justify-content: center;
-    color: white;
+    /* color: white; */
     /* text-align: center; */
     background-color: var(--accent-04);
     columns: var(--accent-01);

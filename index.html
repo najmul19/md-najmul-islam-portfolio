@@ -4,238 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md Najmul Islam Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
-    <script src="https://kit.fontawesome.com/2bfe0cc242.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <title>My Portfolioo</title>
 </head>
 
-<body class="open-sans-normal">
-    <header class="header secondary-bg">
-        <nav>
-            <h3 class="nav-title"><span class="text-primary">N</span>ajmul</h3>
-            <ul>
-                <li><a class="dark-2" href="">Portfolio</a></li>
-                <li><a class="dark-2" href="">Blog</a></li>
-                <li><a class="dark-2" href=""><button class="btn-primary">Hire Me</button></a></li>
-            </ul>
+<body class="">
+    <div class="container">
+        <nav class="navbar">
+            <div class="box theme">
+                <div class="item">
+                    <ion-icon name="sunny-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="box nav">
+                <div class="item">
+                    <a href="#about active">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                        <p>about</p>
+                        <div class="divider rtl"></div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#resume">
+                        <ion-icon name="file-tray-full-outline"></ion-icon>
+                        <p>resume</p>
+                        <div class="divider rtl"></div>
+                    </a>
+                </div>
+                <div class="item ">
+                    <a href="#blogs">
+                        <ion-icon name="reader-outline"></ion-icon>
+                        <p>blogs</p>
+                        <span class="divider ltr"></span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#projects">
+                        <ion-icon name="layers-outline"></ion-icon>
+                        <p>projects</p>
+                        <div class="divider ltr"></div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#contact">
+                        <ion-icon name="paper-plane-outline"></ion-icon>
+                        <p>contact</p>
+                        <span class="divider ltr"></span>
+                    </a>
+                </div>
+            </div>
         </nav>
-        <div class="banner">
-            <div class="banner-content">
-                <h4 class="banner-grettings dark-2">Hi, I am</h4>
-                <h1 class="banner-title">Md. Najmul Islam</h1>
-                <p class="banner-description">
-                    "I'm a competitive programmer and developer passionate about coding. I solve problems on Codeforces, build apps with Flutter, and have experience in C, C++, Python, Java, and web development." </p>
-                <button class="btn-primary"><i class="fa-solid fa-download"></i> Download CV</button>
-                <button class="btn-primary"><i class="fa-solid fa-phone"></i> Contact</button>
-            </div>
-            <img class="banner-profile-picture" src="images/nj_no_bg.png" alt="">
-        </div>
-    </header>
-    <main>
-        <section class="about secondary-bg">
-            <h3 class="section-title">About me</h3>
-            <p class="section-description">
-                "I have been developing applications for the past 8 months in Flutter and 6 months in Java. Below is a
-                quick overview of my main projects:
 
-                Bangladesh 2.0 – A revolutionary documentary app (Flutter)
-                Giga Store – A gadget-selling e-commerce app (Flutter)
-                Tasty Tray – A food app (Java)
-                I specialize in competitive programming, mobile app development, and web technologies. Want to learn
-                more? Check out my portfolio and projects!" </p>
-            <div class="about-items">
-                <!-- .about-item*4>p.item-title+p.item-description -->
-                <div class="about-item">
-                    <p class="item-title">Name:</p>
-                    <p class="item-description">Md. Najmul Islam</p>
-                </div>
-                <div class="about-item">
-                    <p class="item-title">Email:</p>
-                    <p class="item-description">mdnajmulislam10992@gmail.com</p>
-                </div>
-               
-                <div class="about-item">
-                    <p class="item-title">From:</p>
-                    <p class="item-description">Sylhet,BD</p>
-                </div>
-            </div>
-        </section>
-        <!-- what i do start section -->
-        <section class="skills">
-            <h3 class="section-title text-center">
-                What I do
-            </h3>
-            <p class="section-description text-center">
-
-                I am a competitive programmer and developer with experience in building mobile and web applications. I
-                have been developing in Flutter for 8 months and Java for 6 months, creating functional and
-                user-friendly apps. Below is a quick overview of my main skills and technologies I use. Want to learn
-                more? Check out my projects and portfolio!</p>
-            <div class="skils-container">
-                <!-- .skill*4>img+h4.skill-title+p.skill-description -->
-                <div class="skill">
-                    <img src="images/icons/c-.png" alt="">
-                    <h4 class="skill-title">C & C++</h4>
-                    <p class="skill-description">
-                        Strong foundation in data structures, algorithms, and competitive programming. Experienced in
-                        solving problems on Codeforces and implementing optimized solutions.
-                    </p>
-                </div>
-                <div class="skill">
-                    <img src="images/icons/java.png" alt="">
-                    <h4 class="skill-title">Java</h4>
-                    <p class="skill-description">6 months of experience in Java development, including building mobile
-                        applications. Worked on Tasty Tray, a food app, focusing on backend logic, UI implementation,
-                        and data management.
-                    </p>
-                </div>
-                <div class="skill">
-                    <img src="images/icons/html.png" alt="">
-                    <h4 class="skill-title">HTML & CSS</h4>
-                    <p class="skill-description">
-                        Completed foundational web development, with experience in building responsive and visually
-                        appealing user interfaces. Currently diving deeper into web technologies.
-                    </p>
-                </div>
-                <div class="skill">
-                    <img src="images/icons/flutter.png" alt="">
-                    <h4 class="skill-title">Flutter</h4>
-                    <p class="skill-description">8 months of experience in Flutter for cross-platform mobile app
-                        development. Developed Bangladesh 2.0, a revolutionary documentary app, and Giga Store, an
-                        e-commerce gadget-selling app. Skilled in Dart, UI design, Firebase integration, and state
-                        management.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="resume">
-            <h3 class="section-title text-center">A summary of My Resume</h3>
-            <div class="resume-container">
-                <!-- .resume-column*2>h3.resume-column-title+.experience*3>h4.experience-title+h5.experience-sub-title+.experience-description -->
-                <div class="resume-column">
-                    <h3 class="resume-column-title">My Education</h3>
-                    <div class="experience">
-                        <h4 class="experience-title">Secondary School Certificate (SSC)</h4>
-                        <h5 class="experience-sub-title">Moulvibazar Town Kamil Madrasha – GPA: 4.78</h5>
-                        <div class="experience-description">Built a strong academic base in mathematics, science, and
-                            IT, which played a crucial role in developing an interest in coding, problem-solving, and
-                            technology.
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="experience">
-                        <h4 class="experience-title">Higher Secondary Certificate (HSC)</h4>
-                        <h5 class="experience-sub-title">Moulvibazar Govt. College – GPA: 4.17</h5>
-                        <div class="experience-description">Studied science with a focus on mathematics, physics, and
-                            computer science, strengthening logical thinking and problem-solving skills. This foundation
-                            helped in competitive programming and software development.
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="experience">
-                        <h4 class="experience-title">Bachelor of Science in Computer Science & Engineering</h4>
-                        <h5 class="experience-sub-title">Leading University (Completed 3rd Year) – CGPA: 3.26</h5>
-                        <div class="experience-description">Currently pursuing a degree in CSE, focusing on software
-                            development, algorithms, networking, and database management. Gained hands-on experience in
-                            Flutter, Java, Python, and web development. Also learning Machine Learning and working on
-                            projects in mobile app development and competitive programming.
-
-
-                        </div>
-                    </div>
-                </div>
-                <div class="resume-column">
-                    <h3 class="resume-column-title">Eperiance</h3>
-                    <div class="experience">
-                        <h4 class="experience-title">Mobile App Developer</h4>
-                        <h5 class="experience-sub-title">University Projects</h5>
-                        <div class="experience-description">Developed two mobile apps using Flutter:
-                            Bangladesh 2.0 – A revolutionary documentary app.
-                            Giga Store – A gadget-selling e-commerce app.
-                            Gained experience in UI/UX design, Firebase integration, and state management.
-                            Worked on app performance optimization, ensuring smooth user experience across both Android
-                            and iOS.
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="experience">
-                        <h4 class="experience-title">Java Developer</h4>
-                        <h5 class="experience-sub-title">University Project</h5>
-                        <div class="experience-description">Built Tasty Tray, a food app, focusing on backend logic, UI
-                            implementation, and data management.
-                            Implemented key features like user authentication, real-time data updates, and API
-                            integration.
-                            Focused on learning and applying object-oriented programming (OOP) principles in Java
-                            development.
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="experience">
-                        <h4 class="experience-title">Competitive Programmer</h4>
-                        <h5 class="experience-sub-title">Codeforces</h5>
-                        <div class="experience-description">Solved around 800 problems and reached the Pupil rank, with
-                            a maximum rating of 1300.
-                            Focused on improving problem-solving skills with data structures, algorithms, and
-                            optimization techniques.
-                            Regularly participating in contests to enhance skills and rankings.
-
-                        </div>
-                    </div> <hr>
-                    <div class="experience">
-                        <h4 class="experience-title">Onsite Contest Participant</h4>
-                        <h5 class="experience-sub-title">SUST IUPC 2024</h5>
-                        <div class="experience-description">Represented Leading University in the onsite contest.
-                            Solved 3 problems as part of the team, showcasing problem-solving and collaboration skills.
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="experience">
-                        <h4 class="experience-title">Web Development Learner</h4>
-                        <h5 class="experience-sub-title">Self-study</h5>
-                        <div class="experience-description">Completed foundational knowledge in HTML & CSS, with
-                            hands-on experience in designing responsive websites.
-                            Currently expanding knowledge in JavaScript and exploring other web development
-                            technologies.
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <hr>
-            <div class="text-center resume-download-cv">
-                <Button class="btn-primary"><i class="fa-solid fa-download"></i> Download CV</Button>
-            </div>
-        </section>
-    </main>
-    <footer class="secondary-bg">
-        <div class="footer-column">
-            <h3 class="section-titl3">Lets Connect</h3>
-            <p>Please fill out the form on this section to contact with me or call between 10:00 A.M and 8.00 P.M,
-                Sunday through Wednesday.
-
-            </p>
-            <div class="footer-icon-img">
-                <a href="https://www.facebook.com/md.najmul.islam.138619" target="_blank"><img src="images/icons/facebook.png" alt="Facebook Link"></a>
-                <a href="https://www.linkedin.com/in/najmul-islam-80b158263/" target="_blank"><img src="images/icons/linkedin.png" alt="Linkedin Link"></a>
-                <a href="https://github.com/najmul19" target="_blank"><img src="images/icons/github.png" alt="Github Link"></a>
-            </div>
-        </div>
-        <div class="footer-column">
-            <h3 class="section-title">Let’s Message me</h3>
-            <form action="">
-                <input type="text" name="" id="" placeholder="Your name">
-                <input type="email" name="" id="" placeholder="Your email">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-                <input class="btn-primary" type="submit" value="submit">
-            </form>
-        </div>
-    </footer>
+        <div class="box profile">profile</div>
+        <div class="box content">content</div>
+    </div>
 </body>
 
 </html>

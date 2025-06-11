@@ -57,3 +57,100 @@ function toggleReadMore(btn) {
     btn.innerText = "Read less";
   }
 }
+
+// ---------------------
+// Project Modal Functionality
+
+// // Open modal when project is clicked
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const projects = document.querySelectorAll("[data-project]");
+  const modal = document.getElementById("projectModal");
+  const closeModal = document.querySelector(".close-modal");
+  const githubLink = document.getElementById("githubLink");
+  const youtubeOption = document.getElementById("youtubeOption");
+  const youtubeContainer = document.getElementById("youtubeContainer");
+  const youtubeIframe = document.getElementById("youtubeIframe");
+
+  const titleElement = document.getElementById("projectTitle");
+  const descriptionElement = document.getElementById("projectDescription");
+
+  const projectData = {
+    project1: {
+      title: "WebVers - Task Management System",
+      github: "https://github.com/najmul19/WebVers-PHP.git",
+      youtube: "https://youtu.be/cipymO350F8",
+      description: "A PHP-based task management system for IT companies.",
+    },
+    project2: {
+      title: "Bangladesh 2.0",
+      github: "https://github.com/najmul19/Bangladesh_2.0-Firebase.git",
+      youtube: "https://youtu.be/d4odhOR4d5M",
+      description:
+        "A documentary-style mobile app showcasing national history.",
+    },
+  };
+
+  // Set up static event listeners once
+  youtubeOption.addEventListener("click", function () {
+    youtubeContainer.style.display = "block";
+  });
+
+
+
+  projects.forEach((project) => {
+    project.addEventListener("click", function () {
+      const projectId = this.getAttribute("data-project");
+      const projectInfo = projectData[projectId];
+      if (!projectInfo) return;
+
+      // Set project details
+      titleElement.textContent = projectInfo.title;
+      descriptionElement.textContent = projectInfo.description;
+      githubLink.href = projectInfo.github;
+
+      // Reset containers
+      youtubeContainer.style.display = "none";
+  
+      youtubeIframe.src = "";
+
+
+      // Show YouTube or LinkedIn
+      if (projectInfo.youtube) {
+        const youtubeUrl = projectInfo.youtube;
+        const videoIdMatch = youtubeUrl.match(
+          /(?:v=|\/embed\/|youtu\.be\/)([a-zA-Z0-9_-]{11})/
+        );
+        const videoId = videoIdMatch ? videoIdMatch[1] : "";
+        youtubeIframe.src = `https://www.youtube.com/embed/${videoId}`;
+        youtubeContainer.style.display = "block";
+      } 
+
+      // Show modal
+      modal.style.display = "block";
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  // Close modal logic
+  closeModal.addEventListener("click", function () {
+    modal.style.display = "none";
+    youtubeContainer.style.display = "none";
+    linkedinContainer.style.display = "none";
+    youtubeIframe.src = "";
+    linkedinIframe.src = "";
+    document.body.style.overflow = "auto";
+  });
+
+  window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+      youtubeContainer.style.display = "none";
+      linkedinContainer.style.display = "none";
+      youtubeIframe.src = "";
+      linkedinIframe.src = "";
+      document.body.style.overflow = "auto";
+    }
+  });
+});

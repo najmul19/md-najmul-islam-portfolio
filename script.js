@@ -63,7 +63,6 @@ function toggleReadMore(btn) {
 
 // // Open modal when project is clicked
 
-
 document.addEventListener("DOMContentLoaded", function () {
   const projects = document.querySelectorAll("[data-project]");
   const modal = document.getElementById("projectModal");
@@ -97,8 +96,6 @@ document.addEventListener("DOMContentLoaded", function () {
     youtubeContainer.style.display = "block";
   });
 
-
-
   projects.forEach((project) => {
     project.addEventListener("click", function () {
       const projectId = this.getAttribute("data-project");
@@ -112,9 +109,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Reset containers
       youtubeContainer.style.display = "none";
-  
-      youtubeIframe.src = "";
 
+      youtubeIframe.src = "";
 
       // Show YouTube or LinkedIn
       if (projectInfo.youtube) {
@@ -125,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const videoId = videoIdMatch ? videoIdMatch[1] : "";
         youtubeIframe.src = `https://www.youtube.com/embed/${videoId}`;
         youtubeContainer.style.display = "block";
-      } 
+      }
 
       // Show modal
       modal.style.display = "block";
@@ -154,3 +150,33 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// blog script
+
+const modal = document.getElementById("blogModalb");
+const modalTitle = document.getElementById("modalTitleb");
+const modalImage = document.getElementById("modalImageb");
+const modalContent = document.getElementById("modalContentb");
+const closeBtn = document.querySelector(".close-btnb");
+
+document.querySelectorAll(".blog-box").forEach((box) => {
+  box.querySelector(".link").addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const title = box.querySelector("h3").innerText;
+    const imgSrc = box.querySelector("img").src;
+    const fullText = box.querySelector(".full-content").innerHTML;
+
+    modalTitle.innerText = title;
+    modalImage.src = imgSrc;
+    modalContent.innerHTML = fullText;
+
+    modal.style.display = "block";
+  });
+});
+
+closeBtn.onclick = () => (modal.style.display = "none");
+
+window.onclick = (event) => {
+  if (event.target == modal) modal.style.display = "none";
+};

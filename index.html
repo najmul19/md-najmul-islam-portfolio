@@ -363,45 +363,129 @@
                 <!-- blogs -->
 
 
+
+
                 <h1 id="blogs">My <span class="colored">Blogs</span></h1>
                 <div class="divider ltr"></div>
                 <section class="blogs">
                     <div class="blog-box">
-                        <img src="images/icons/html.png" alt="">
+                        <img src="images/ai_neuron.png" alt="">
                         <div>
-                            <h3>Web Design Tools</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, repudiandae!</p>
-                            <span class="link"><a href="#">Read More</a><ion-icon
-                                    name="caret-forward-outline"></ion-icon></span>
+                            <h3>আর্টিফিশিয়াল নিউরাল নেটওয়ার্ক (ANN) বনাম বায়োলজিকাল নিউরাল নেটওয়ার্ক (BNN)</h3>
+
+                            <!-- Short preview -->
+                            <p class="preview">
+                                Artificial Neural Network (ANN) হলো এমন একটি গাণিতিক মডেল যা মানুষের মস্তিষ্কের কাজ
+                                অনুকরণ
+                                করে...
+                            </p>
+
+                            <!-- Full hidden blog -->
+                            <div class="full-content" style="display: none;">
+                                আগে জানি: ANN কী?
+                                Artificial Neural Network (ANN) হলো এমন একটি গাণিতিক মডেল যা মানুষের মস্তিষ্কের কাজ
+                                অনুকরণ করে।এটি বিভিন্ন ইনপুট নিয়ে, সেগুলো প্রক্রিয়া করে, এবং একটি আউটপুট তৈরি করে —
+                                যেভাবে আমাদের ব্রেইনের নিউরন কাজ করে।
+
+                                Parallel Processing
+                                BNN: মানব মস্তিষ্কে বিলিয়ন নিউরন একসাথে প্যারালালি কাজ করে জটিল সমস্যার সমাধান করে।
+
+                                ANN: Deep Neural Networks-এ হাজার হাজার নিউরন একসাথে কাজ করে বড় ডেটা বা জটিল সমস্যা
+                                সমাধান করে।
+
+                                Step 1: ইনপুট নেওয়া — Dendrite vs Input Nodes
+                                BNN (Biological): মানব মস্তিষ্কে নিউরনের শাখা যাকে ডেনড্রাইট (Dendrite) বলে, সেটা অন্য
+                                নিউরন থেকে সিগন্যাল (তথ্য) গ্রহণ করে।
+
+                                ANN (Artificial): আর্টিফিশিয়াল নিউরাল নেটওয়ার্কে ইনপুট নোড (x₁, x₂, ..., xₙ) ইনপুট ডেটা
+                                নেয়। এগুলোই ডেনড্রাইটের কাজের অনুকরণ।
+
+                                Step 2: ইনপুট ও ওজন যোগ — Synapse vs Weighted Input
+                                BNN: ডেনড্রাইট ও সেল বডির মাঝে থাকে Synapse (সংযোগ)। এখানে রাসায়নিক পরিবর্তনের মাধ্যমে
+                                সিগন্যাল শক্তি বাড়তে বা কমতে পারে।
+
+                                ANN: এখানে প্রতিটি ইনপুটের সাথে একেকটা ওজন (Weight) থাকে, যা ইনপুটের গুরুত্ব নির্ধারণ
+                                করে।
+
+                                👉 Output = (x₁ × w₁) + (x₂ × w₂) + … + (xₙ × wₙ)
+
+
+                                Step 3: সব ইনপুট যোগ করা — Soma vs Summation
+                                BNN:সোমা (Soma বা Cell Body) সব ইনপুট যোগ করে দেখে যে এটা ফায়ার করার মতো শক্তিশালী কিনা।
+
+                                ANN: Summation unit ওজনযুক্ত ইনপুটগুলো যোগ করে।
+
+                                Step 4: সিদ্ধান্ত নেওয়া — Firing vs Activation Function
+                                BNN: যদি ইনপুট সিগন্যাল কোনো থ্রেশহোল্ড ছাড়িয়ে যায়, তাহলে নিউরন ফায়ার করে (সিগন্যাল
+                                পাঠায়)।
+
+                                ANN: Summation-এর রেজাল্ট goes into an activation function (যেমন: Sigmoid, ReLU), যেটা
+                                ঠিক করে সিগন্যাল যাবে কি না।
+
+                                Step 5: আউটপুট পাঠানো — Axon vs Output
+                                BNN: নিউরন যদি ফায়ার করে, তাহলে সিগন্যাল Axon দিয়ে পরের নিউরনে যায়।
+
+                                ANN: Activation function এর আউটপুটটাই অন্য লেয়ারে চলে যায় – মানে এটি Axon এর মতো কাজ
+                                করে।
+
+                                Step 6: পরবর্তী নিউরনে পাঠানো — Pre vs Post Synaptic
+                                BNN: সিগন্যাল যে নিউরন থেকে যায়, তাকে বলে Presynaptic neuron যে নিউরন পায়, তাকে বলে
+                                Postsynaptic neuron
+
+                                ANN: একটা লেয়ারের আউটপুট পরবর্তী লেয়ারের ইনপুট হয় – এইভাবে পুরো নেটওয়ার্ক কাজ করে।
+
+                                🎯 উপসংহার:
+                                ANN ≈ BNN এর অনুকরণে তৈরি একটি গাণিতিক মডেল | আমাদের মস্তিষ্কের মতো করে চিন্তা করা, শেখা
+                                ও সিদ্ধান্ত নেওয়া শেখানোর চেষ্টা।
+                            </div>
+
+                            <!-- <p></p> -->
+                            <span class="link">
+                                <a href="#">Read More</a>
+                                <ion-icon name="caret-forward-outline"></ion-icon>
+                            </span>
                         </div>
                     </div>
                     <div class="blog-box">
                         <img src="images/icons/html.png" alt="">
                         <div>
                             <h3>Wordpess</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, repudiandae!</p>
+                            <p class="preview">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+                                repudiandae...</p>
+                            <div class="full-content" style="display: none;">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. A molestias repudiandae iste
+                                at nostrum vitae dolorem suscipit dolorum excepturi ipsam, magnam fugit error delectus
+                                adipisci sint pariatur ex aliquid. Expedita cumque accusamus harum nam laborum, dolorum
+                                consequatur nobis, exercitationem inventore maxime sint? Temporibus pariatur illum atque
+                                numquam. Praesentium maiores sed molestias placeat, distinctio nisi aspernatur non
+                                incidunt ad earum beatae nesciunt unde aut neque facilis. Necessitatibus laudantium qui
+                                dolor aspernatur, beatae deleniti quos harum maxime, cum rerum eligendi nemo voluptate
+                                iste. Magnam possimus nemo totam nam quas unde, tempora illo officiis laboriosam eum a
+                                consequatur, libero error dolorem maxime cumque eligendi aperiam. Facilis hic provident
+                                asperiores sequi rerum magni, est beatae nostrum voluptatum non consequatur, ipsa alias!
+                                Laborum odit quia nulla maiores, dolorum beatae architecto harum, aliquid veritatis
+                                voluptatem neque aspernatur voluptates voluptate sunt soluta, cupiditate natus quos
+                                iusto porro veniam? Eum ex corporis, hic blanditiis libero, mollitia labore accusantium
+                                veniam dolore quam facilis. Accusantium explicabo illum repellendus, ea accusamus
+                                perspiciatis ipsa sequi doloribus. Praesentium, veritatis numquam laborum aliquid
+                                adipisci beatae cupiditate soluta quis at. Autem quo nulla alias quam perferendis
+                                repudiandae quod, natus nostrum ipsum temporibus, voluptatum delectus saepe! Numquam
+                                esse, dolorum adipisci odit rerum unde earum tenetur sunt est, illum, accusamus
+                                repellat. Voluptatem, inventore ut. Quibusdam explicabo aut est tempora maiores
+                                architecto earum beatae consequuntur adipisci praesentium! Magnam assumenda, ad
+                                veritatis non nobis rerum dolorum maxime ea minima voluptates. Esse rem odit sapiente
+                                repudiandae vitae, commodi iusto fugit neque aliquam laudantium voluptatum aut totam
+                                quam, nesciunt quae magnam inventore perferendis ab sit praesentium. Hic eius id, sequi
+                                facilis repellat non maiores odit nostrum aperiam quia eveniet nisi et provident dolorem
+                                optio impedit doloribus autem voluptate tempora beatae in sed sit pariatur? Atque sit,
+                                possimus dicta saepe commodi nisi fugit nihil, eum maiores consequuntur minima,
+                                cupiditate quisquam voluptatem dolorum?
+                            </div>
                             <span class="link"><a href="#">Read More</a><ion-icon
                                     name="caret-forward-outline"></ion-icon></span>
                         </div>
                     </div>
-                    <div class="blog-box">
-                        <img src="images/icons/html.png" alt="">
-                        <div>
-                            <h3>Machine Learingin</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, repudiandae!</p>
-                            <span class="link"><a href="#">Read More</a><ion-icon
-                                    name="caret-forward-outline"></ion-icon></span>
-                        </div>
-                    </div>
-                    <div class="blog-box">
-                        <img src="images/icons/html.png" alt="">
-                        <div>
-                            <h3>Artificial Inteligence</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, repudiandae!</p>
-                            <span class="link"><a href="#">Read More</a><ion-icon
-                                    name="caret-forward-outline"></ion-icon></span>
-                        </div>
-                    </div>
+
                 </section>
 
 
@@ -459,12 +543,32 @@
                 </div>
 
 
-             
+
 
             </div>
         </div>
 
+
+
+
+
+
+        <!-- blog modal -->
+
+        <!-- Modal for Full Blog -->
+        <div id="blogModalb" class="modalb">
+            <div class="modal-contentb">
+                <span class="close-btnb">&times;</span>
+                <h2 id="modalTitleb"></h2>
+                <img id="modalImageb" src="" alt="" style="width:100%; border-radius: 8px;">
+                <p id="modalContentb"></p>
+            </div>
+        </div>
+
+
     </div>
+
+
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>

@@ -77,12 +77,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const projectData = {
     project1: {
+      title: "KgabarKuri - Food Delivery Restuarant App",
+      github: "https://github.com/najmul19/KhabarKuri.git",
+      youtube: "https://youtu.be/K2B6807EWj4",
+      description:
+        "Khabar Kuri – Full-Stack Food Ordering App with Stripe, JWT, Realtime Updates | MERN Stack Project",
+    },
+    project2: {
       title: "WebVers - Task Management System",
       github: "https://github.com/najmul19/WebVers-PHP.git",
       youtube: "https://youtu.be/cipymO350F8",
       description: "A PHP-based task management system for IT companies.",
     },
-    project2: {
+    project3: {
       title: "Bangladesh 2.0",
       github: "https://github.com/najmul19/Bangladesh_2.0-Firebase.git",
       youtube: "https://youtu.be/d4odhOR4d5M",

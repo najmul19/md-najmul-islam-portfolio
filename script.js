@@ -96,6 +96,33 @@ document.addEventListener("DOMContentLoaded", function () {
       description:
         "A documentary-style mobile app showcasing national history.",
     },
+    project4: {
+      title: "Multi-Agent AI System",
+      github: "#",
+      youtube: "https://youtu.be/EJ7Hllnb4Ik",
+      description:
+        "A Smart AI Agent (Personal Ai Assistant ) Workflow for Automation.",
+    },
+    project5: {
+      title: "Lead Follow-Up",
+      github: "#",
+      youtube: "https://youtu.be/Tej42Z4ox00",
+      description: "A Build an AI-Powered Instagram Content Automation System.",
+    },
+    project6: {
+      title: "Instagram Content Automation",
+      github: "#",
+      youtube: "https://youtu.be/_3dabROLkvk",
+      description:
+        "Smart Lead Follow-Up Automation with n8n | AI + Human in the Loop Workflow.",
+    },
+    project7: {
+      title: "Personal Ai Assistant",
+      github: "#",
+      youtube: "https://youtu.be/EJ7Hllnb4Ik",
+      description:
+        "A Smart AI Agent (Personal Ai Assistant ) Workflow for Automation.",
+    },
   };
 
   // Set up static event listeners once

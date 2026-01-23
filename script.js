@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
       description:
         "A Smart AI Agent (Personal Ai Assistant ) Workflow for Automation.",
     },
-    project7: {
+    project8: {
       title: "Self-Learning AI Agent ",
       github: "#",
       youtube: "https://youtu.be/6wCzKTMgKwg",

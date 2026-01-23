@@ -123,6 +123,12 @@ document.addEventListener("DOMContentLoaded", function () {
       description:
         "A Smart AI Agent (Personal Ai Assistant ) Workflow for Automation.",
     },
+    project7: {
+      title: "Self-Learning AI Agent ",
+      github: "#",
+      youtube: "https://youtu.be/6wCzKTMgKwg",
+      description: "A Self-Learning AI Agent Using n8n.",
+    },
   };
 
   // Set up static event listeners once
@@ -150,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (projectInfo.youtube) {
         const youtubeUrl = projectInfo.youtube;
         const videoIdMatch = youtubeUrl.match(
-          /(?:v=|\/embed\/|youtu\.be\/)([a-zA-Z0-9_-]{11})/
+          /(?:v=|\/embed\/|youtu\.be\/)([a-zA-Z0-9_-]{11})/,
         );
         const videoId = videoIdMatch ? videoIdMatch[1] : "";
         youtubeIframe.src = `https://www.youtube.com/embed/${videoId}`;

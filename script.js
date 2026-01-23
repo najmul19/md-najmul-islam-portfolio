@@ -99,22 +99,24 @@ document.addEventListener("DOMContentLoaded", function () {
     project4: {
       title: "Multi-Agent AI System",
       github: "#",
-      youtube: "https://youtu.be/EJ7Hllnb4Ik",
+      youtube: "https://youtu.be/HzVX0EmEu3M",
       description:
-        "A Smart AI Agent (Personal Ai Assistant ) Workflow for Automation.",
+        // "A Smart AI Agent (Personal Ai Assistant ) Workflow for Automation.",
+        "A Multi-Agent AI System with LLM Routing (n8n + Gemini)",
     },
     project5: {
       title: "Lead Follow-Up",
       github: "#",
-      youtube: "https://youtu.be/Tej42Z4ox00",
-      description: "A Build an AI-Powered Instagram Content Automation System.",
+      youtube: "https://youtu.be/_3dabROLkvk",
+      // description: "A Build an AI-Powered Instagram Content Automation System.",
+      description: "A Smart Lead Follow-Up Automation with n8n | AI + Human in the Loop Workflow",
     },
     project6: {
       title: "Instagram Content Automation",
       github: "#",
-      youtube: "https://youtu.be/_3dabROLkvk",
+      youtube: "https://youtu.be/Tej42Z4ox00",
       description:
-        "Smart Lead Follow-Up Automation with n8n | AI + Human in the Loop Workflow.",
+        "Build an AI-Powered Instagram Content Automation System ",
     },
     project7: {
       title: "Personal Ai Assistant",
